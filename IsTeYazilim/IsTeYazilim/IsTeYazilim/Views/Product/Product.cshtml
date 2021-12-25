@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Ürün Kategorileri";
+}
+
+@model IEnumerable<IsTeYazilim.Models.Category>
+
+<h1>@ViewData["Title"]</h1>
+
+<body>
+    @Html.Partial("_Category", Model)
+</body>

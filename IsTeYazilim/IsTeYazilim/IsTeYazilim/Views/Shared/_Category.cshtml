@@ -1,0 +1,19 @@
+﻿@model IEnumerable<IsTeYazilim.Models.Category>
+
+<div id="category">
+    <ul>
+        @foreach (var item in Model)
+        {
+            <div class="row">
+                <div id=" sidebar" class="span3">
+                    <div class="well well-small">
+                        <ul class="nav nav-list">
+                            <li class="active"><a asp-action="@item.Name">@item.Name</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        }
+    </ul>
+</div>
+
